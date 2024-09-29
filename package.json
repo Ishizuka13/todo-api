@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "nodemon -e ts,json app.ts"
+    "dev": "nodemon -e ts,json app.ts",
+    "start": "ts-node --esm server.ts"
   },
   "dependencies": {
     "cors": "2.8.5",
