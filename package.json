@@ -1,7 +1,9 @@
 {
   "scripts": {
+    "build": "tsc",
     "dev": "nodemon -e ts,json app.ts",
-    "start": "ts-node app.ts"
+    "start": "node dist/server.js",
+    "postbuild": "mkdir dist && mv src/* dist/"
   },
   "dependencies": {
     "cors": "2.8.5",

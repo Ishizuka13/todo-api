@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { task } from "../models/Task";
+import { task } from "../models/task";
 
 class Task {
   async createTask(req: Request, res: Response): Promise<void> {
