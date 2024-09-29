@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 6000
 
-CMD [ "nodemon -e ts,json app.ts" ]
+CMD [ "npm", "dev" ]
