@@ -31,6 +31,10 @@ server.delete("/task/:id", TaskController.deleteTask);
 
 app.use(server);
 
-app.listen(process.env.HOST_PORT as string, () =>
-  console.log("Foi", { port: process.env.HOST_PORT as string })
+app.listen(
+  {
+    host: "0.0.0.0",
+    port: process.env.HOST_PORT as string,
+  },
+  () => console.log("Foi", { port: process.env.HOST_PORT as string })
 );
